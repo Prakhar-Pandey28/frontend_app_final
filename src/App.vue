@@ -1,17 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <!-- Replace or include your components here -->
+    <LogIn />
+    <SignUp />
+    <TaskList />
+    <TaskForm />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// Import the components
+import LogIn from './components/LogIn.vue';
+import SignUp from './components/SignUp.vue';
+import TaskList from './components/TaskList.vue';
+import TaskForm from './components/TaskForm.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    // Register the components
+    LogIn,
+    SignUp,
+    TaskList,
+    TaskForm,
+  },
+};
 </script>
 
 <style>
